@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/backgroundimg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+    height: 70vh;
+    position: relative;
+
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+.netflix-logo{
+    height: 50px;
+    width: 110px;
+    position: relative;
+    z-index: 10;  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 62px;
+}
+
+.hero{
+    color: white;
+    position: relative;
+    z-index: 9;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Martel Sans", sans-serif;
+    gap: 6px;
+    padding:0 30px;
+    text-align: center;
+}
+.hero > :first-child{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.hero > :nth-child(2){
+    font-weight: 400;
+    font-size: 2rem;
+}
+.hero >:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.line{
+    height: 7px;
+    background-color: rgb(76, 74, 74);
+    width: 100%;
+    position: absolute;
+    z-index: 20
+}
+/* Media Query for overflow */
+@media (max-width : 1063px) {
+    .hero{
+        overflow: hidden;
+        /* font-size: 24px; */
+    }
+}
+
+/* Buttons  */
+.mail{
+    display: flex;
+
+}
+.input-email, .btn-red{
+    padding: 15px;
+    border-radius: 4px;
+}
+/* Buttons  */
+.input-email{
+    width: 360px;
+    opacity: 0.7;
+  background-color: rgba(211, 206, 206, 0.2);
+  margin-right: 6px;
+  font-weight: 500;
+  border: 1px solid rgba(white, white, white, 0.7);
+}
+nav .btn{
+    position: relative;
+    z-index: 10;  
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-weight: 400;
+}
+.lang{
+    background-color: rgba(258,243,243,0.342);
+   border: 1px solid white;
+}
+.red-sm, .btn-red{
+    background-color: red;
+    color: white;
+}
+.btn-red{
+    width: 30%;
+    font-weight: 600;
+    font-size: 18px;
+}
+.fa-solid{
+    font-weight: none;
+}
+/* For Placeholder  */
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+/* Section  */
+
+.first{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    align-items: center;
+}
+.setImg{
+    position: relative;
+}
+.setImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.setImg video{
+    position: absolute;
+    top: 64px;
+    right: 65px;
+    width: 21vw;
+}
+section.first >div{
+    display: flex;
+    flex-direction: column;
+}
+section.first >div :first-child{
+    font-size: 42px;
+    font-weight: bolder;
+}
+section.first >div :first-child{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+/* == FAQ == */
+.faq{
+    color: white;
+    /* font-size: 24px; */
+  
+}
+.faq h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 42px;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(48, 47, 47);
+    padding: 26px;
+    max-width: 75vw;
+    margin:5px auto;
+    cursor: pointer;
+    transform: all 3s ease-out;
+}
+.faqbox:hover{
+    background-color: rgb(63, 60, 60);
+  
+}
